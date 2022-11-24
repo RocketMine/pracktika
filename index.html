@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <title>Test git</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main2.js"></script>
+    
 </head>
-    <body>
+    <body onload="init()" >
         <div class="block1">
             <div class="block1-1">
+                <div id="timer" class="timer">0</div>
                 <p align="center">
-                    Таймер
-                    <input type="text" name="time" id="time">
-                        <button id="button">Запустить</button>
-                    <div id="timer"></div>
-                        <script src="main.js"></script>
-                </p> 
+                    Таймер:
+                </p>
             </div>
             <div class="block1-2">
                 <p align="center">
@@ -23,8 +22,7 @@
                 </p>
             </div>
         </div>
-        <div class="block2">
-            <script src="main2.js"></script>
+        <div id="game" >
         </div>
     </body>
 </html>
