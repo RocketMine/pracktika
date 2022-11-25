@@ -1,5 +1,5 @@
 
-    function init(){
+function init(){
         sec = 0;
         setInterval(tick, 1000);
 }
@@ -8,10 +8,14 @@ function tick(){
         document.getElementById("timer").
             childNodes[0].nodeValue = sec;
 }
-window.onload = function str(){
-    for(var i=0;i<4; i++){
-        for (var y=0;y<4;y++){
-             document.getElementById('game').innerHTML+="<div class='block'></div>";
+function getRandomInRange(min, max){
+    return Math.floor(Math.random()*(max-min+1))
 }
-}	
+console.log(getRandomInRange(1, 30))
+
+function prim(){
+    var a = getRandomInRange(0, 10);
+    var b = getRandomInRange(10, 20);
+    var c = a + b ;   
 }
+console.log(c)
