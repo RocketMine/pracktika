@@ -9,7 +9,7 @@ div{
     margin: 0;
     padding: 0;
 }
-.block1{
+.block-one{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
@@ -17,23 +17,19 @@ div{
     background-color: aqua;
     border: 1px solid black;
 }
-.block1-1{
+.block-one-one{
     align-items: center;
     width: 100%;
 }
-.block1-2{
+.block-one-two{
     align-items: center;
     width: 100%;
-}
-.block2{
-    display: grid;
-    background-color: aquamarine;
-    width: 100%;
-    height: 800px;
 }
 button{
     width: 100px;
     height: 50px;
+    background-color: deepskyblue;
+    border-radius: 56px;
 }
 .game{
 	width: 100%;
@@ -45,11 +41,12 @@ button{
 	height: 120px;
 	float: left;
 	border: 1px solid white;
+    text-align-last: center;
 
 	box-sizing: border-box;
 }
 .timer{
     position: absolute;
-    left: 530px;
+    left: 420px;
     top: 91px;
 }
