@@ -5,40 +5,87 @@
     <title>Test git</title>
     <link rel="stylesheet" href="style.css">
     <script src="main2.js"></script>
-    
+    <script type="text/javascript">
+        function init()
+        {
+            sec = 0;
+            setInterval(tick, 1000);
+        }
+        
+        function tick()
+        {
+            sec++;
+            document.getElementById("timer").
+                childNodes[0].nodeValue = sec;
+        }
+    </script>
 </head>
-    <body onload="init()" >
-        <div class="block1">
-            <div class="block1-1">
+    <body>
+        <div class="block-one">
+            <div class="block-one-one" onload="init()">
                 <div id="timer" class="timer">0</div>
                 <p align="center">
-                    Таймер:
+                    Таймер: ____секунды <button onclick="init()">начать</button>
                 </p>
             </div>
-            <div class="block1-2">
+            <div class="block-one-two">
                 <p align="center">
                     Чтобы отправить результат
-                <button>Отправить</button>
+                <button onclick="kon()">Отправить</button>
                 </p>
             </div>
         </div>
         <div id="game" >
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
+            <div class="block">
+                <div>53 + 37 =</div>
+                <div><input type="text" id="pr1"></div>  
+                <div><button onclick="otvet1()">Отправить</button></div>
+            </div>
+            <div class="block">
+                <div>12 * 4 =</div>
+                <div><input type="text" id="pr2"></div>  
+                <div><button onclick="otvet2()">Отправить</button> </div>
+            </div>
+            <div class="block" id="block">
+                <div>81 / 9 =</div>
+                <div><input type="text" id="pr3"></div>  
+                <div><button onclick="otvet3()">Отправить</button> </div>
+            </div>
+            <div class="block" id="block">
+                <div>164 - 46 =</div>
+                <div><input type="text" id="pr4"></div>  
+                <div><button onclick="otvet4()">Отправить</button> </div>
+            </div>
+            <div class="block" id="block">
+                <div>37 + 42 - 78 =</div>
+                <div><input type="text" id="pr5"></div>  
+                <div><button onclick="otvet5()">Отправить</button> </div>
+            </div>
+            <div class="block" id="block">
+                <div>55 + 35 / 7 =</div>
+                <div><input type="text" id="pr6"></div>  
+                <div><button onclick="otvet6()">Отправить</button> </div>
+            </div>
+            <div class="block" id="block">
+                <div>5 * 8 + 60 =</div>
+                <div><input type="text" id="pr7"></div>  
+                <div><button onclick="otvet7()">Отправить</button> </div>
+            </div>
+            <div class="block" id="block">
+                <div>30 / 6 * 7 =</div>
+                <div><input type="text" id="pr8"></div>  
+                <div><button onclick="otvet8()">Отправить</button> </div>
+            </div>
+            <div class="block" id="block">
+                <div>11 * (62 - 35) =</div>
+                <div><input type="text" id="pr9"></div>  
+                <div><button onclick="otvet9()">Отправить</button> </div>
+            </div>
+            <div class="block" id="block">
+                <div>900 / (15 + 15)  =</div>
+                <div><input type="text" id="pr10"></div>  
+                <div><button onclick="otvet10()">Отправить</button> </div>
+            </div>
         </div>
     </body>
 </html>
